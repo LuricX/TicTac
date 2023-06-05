@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+.stat {
+    display: flex;
+    font-size: 18px;
+}
+
+.stat table {
+    align-items: center;
+    margin: auto 200px;
+}
+
+.stat th, .stat td {
+    border: 2px solid #ffffff;
+    padding: 5px;
+    background: #dbdbdb;
+    border-radius: 10px;
+    text-align: center;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.game{
+    margin: 20px auto;
+    width:300px;
+    height: 300px;
+    display:flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.pole{
+    width: 100px;
+    display: flex;
+    height: 100px;
+    border: 2px solid white;
+    background: #dbdbdb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.one{
+    stroke-dasharray: 100px;
+    stroke-dashoffset: 100px;
+    animation: draw 0.3s forwards;
+
+}
+.two{
+    stroke-dasharray: 100px;
+    stroke-dashoffset: 100px;
+    animation: draw 0.3s forwards;
+
+}
+@keyframes draw{
+    100%{stroke-dashoffset: 0;}
+}
+
+.cross{
+    width:100px;
+    height: 100px;
+}
+
+h1{
+    display: flex;
+    margin:0 auto;
+    background: #dbdbdb;
+    color:rgba(0, 0, 0, 0.829);
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.null{
+    width: 100px;
+    height: 100px;
+    stroke-dasharray: 252;
+    stroke-dashoffset: 252;
+    animation: draw 0.3s forwards;
+}
+
+.winx{
+    background:rgba(79, 141, 79, 0.549);
+}
+.wino{
+    background: rgba(196, 53, 101, 0.466);
+}
+.winr{
+    background: rgba(199, 199, 26, 0.582);
+}
+.CPlayer{
+    width:210px;
+    padding:5px;
+    margin: 10% auto;
+    color:white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    border:1px solid white;
+    background: #242121;
+}
+.window{
+    position: fixed;
+    inset:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    display: none;
+}
+.window_main{
+    height: 200px;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    font-size: 25px;
+    color: black;
+    border-radius: 10px;
+    padding: 30px;
+    
+
+}
+
+.new_game{
+    background-color: black;
+    color: white;
+    top:70%;
+    border:1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+    height: 25px;
+}
+.new_game:hover{
+    background-color: white;
+    color:black;
+    border:1px solid black
+}
+    
